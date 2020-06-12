@@ -1,0 +1,139 @@
+body  {
+    height: 100vh;
+    width: 100vw; 
+}
+
+main {
+    height: 100vh;
+    width: 60% auto;
+    font-family: 'Quicksand', sans-serif;
+}
+
+.grid {
+    display: grid;
+    grid-template-rows: 25% 25% 25% 25%;
+    grid-template-columns: repeat(6, 1fr);
+    grid-template-areas:   
+    ". header header header header ."
+    ". profile image image contact ."
+    ". edu skills skills expert ."
+    ". job1 job1 job2 job2 .";
+
+}
+
+
+header{
+    background-color: #6B9EA2;
+    text-align: center;
+    grid-area: header;
+    
+}
+.name {
+    background-color: #3B6490;
+    width: 35%;
+    margin: auto; 
+   
+    
+}
+
+.name > h1, h2 {
+    border-bottom: solid #F4F4F4;
+    border-width: 5px;
+}
+
+p {
+    margin: auto;
+    width: 240px;
+    height: auto;
+}
+
+h2 {
+    margin: auto;
+}
+
+
+.profile {
+    background-color: #3B6490;
+    text-align: center;
+    grid-area: profile;
+}
+
+#image {
+    grid-area: image;
+    height: 75%;
+    width: 25%;
+    border-radius: 50%;
+    margin: 10px auto;
+    
+}
+    
+.contact {
+    background-color: #A1766E;
+    text-align: center;
+    grid-area: contact;
+}
+
+
+a:visited {
+    color: red;
+}
+
+a:hover {
+    color: blue;
+}
+
+
+
+.edu {
+    background-color: #A1766E;
+    text-align: center;
+    grid-area: edu;
+}
+
+.skills {
+    background-color: #6B9EA2;
+    text-align: center;
+    grid-area: skills;
+}
+ 
+.skills > h2{
+    margin: auto;
+    border-bottom: solid #F4F4F4;
+    border-width: 15px;
+}
+
+.expert {
+    background-color: #3B6490;
+    text-align: center;
+    grid-area: expert;
+}
+
+.job1 {
+    background-color: #F4F4F4;
+    grid-area: job1;
+}
+
+.job1 > h2, h3, ul {
+    justify-content: space-evenly;
+    margin: 0;
+}
+
+.job2 {
+    background-color: #F4F4F4;
+    grid-area: job2;
+    
+}
+
+.job2 > h2, h3, ul {
+    margin: 0;
+}
+
+ul{
+    font-size: 12px;
+}
+footer {
+    background-color: black;
+    grid-area: footer;
+    color: white;
+}
+    
